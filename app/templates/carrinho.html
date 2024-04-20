@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{%load static%}
+
+{% block content %}
+
+<div class="container mt-4">
+  <h2>Seu Carrinho</h2>
+  <div class="row mt-4">
+    <div class="col-md-8">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Produto 1</h5>
+          <p class="card-text">Quantidade: 1</p>
+          <p class="card-text">Preço: R$ 50,00</p>
+          <button class="btn btn-danger btn-sm">Remover</button>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Produto 2</h5>
+          <p class="card-text">Quantidade: 2</p>
+          <p class="card-text">Preço: R$ 30,00</p>
+          <button class="btn btn-danger btn-sm">Remover</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Total do Carrinho</h5>
+          <p class="card-text">Subtotal: R$ 110,00</p>
+          <p class="card-text">Frete: R$ 10,00</p>
+          <hr>
+          <h4 class="card-text">Total: R$ 120,00</h4>
+          <button class="btn btn-primary btn-block mt-3">Finalizar Compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+</body>
+</html>

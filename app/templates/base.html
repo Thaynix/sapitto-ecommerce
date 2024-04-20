@@ -10,12 +10,51 @@
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-    <title>Base</title>
+    {% block title %}<title>Base</title>{% endblock %}
 
 </head>
 <body>
 
-
+    {% block navbar %}
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar-color fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand logo-nav" href="{% url 'index' %}">Sapitto</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+            
+                <!--BARRA DE PESQUISA-->
+            <form class="d-flex">
+                <input class="form-control me-2 navbar-search" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn" type="submit">
+                    <img class="imgnav" src="{% static 'img/icons8-lupa-64.png' %}" alt="">
+                </button>
+            </form>
+              <!--NAV ITENS-->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url "carrinho" %}">
+                        <img class="carrinho imgnav" src="{% static 'img/carrinho.png'%}" alt="">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url "user" %}">
+                        <img class="carrinho imgnav" src="{% static 'img/icons8-usuário-homem-com-círculo-64.png' %}" alt="">
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    {% endblock %}
+    
+    {% block content %}
+    
+    {% endblock %}
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
