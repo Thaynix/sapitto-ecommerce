@@ -1,0 +1,110 @@
+
+@font-face {
+    font-family: 'sapitto';
+    src: url(fonts/chatime.otf) format('opentype');
+  }
+  
+  .logo-nav {
+    font-family: 'sapitto';
+    font-size: 30px;
+    color: #fff;
+    margin-left: 10px;
+    letter-spacing: 2px;
+  
+  }
+  
+  /*Navbar*/
+  .custom-navbar-color {
+    background-color: #637439; /* Altere para a cor desejada */
+  }
+  
+  .nav-item {
+    color: #fff; /* Altere para a cor desejada */
+  }
+  
+  
+  /* Largura da barra de rolagem */
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .carrinho {
+    height: 35px;
+  }
+  
+  .navbar-search {
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+    margin: auto;
+  }
+  
+  .imgnav {
+    height: 35px;
+    width: 35px;
+  
+  }
+  
+  /* login*/
+  body {
+    background-color: #f8f9fa;
+  }
+  .login-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 40px;
+    margin-top: 100px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* USUARIO */
+  
+  body {
+    background-color: #f8f9fa;
+  }
+  .profile-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .profile-info {
+    margin-bottom: 20px;
+  }
+  
+  /* slide*/
+  .carousel {
+  margin-top: 70px;
+  
+  }
+  
+  .custom-slide {
+  height: 500px; /* Altura desejada em pixels */  
+  }
+  
+  /*imagem do slide*/
+  .slideimg {
+  width: 300px;
+  height: 500px;
+  object-fit: cover; /*para imagem n ficar esticada, cortando o excesso e deixando bonitinha*/
+  }
+  
+  /*CARD | PRODUTOS*/
+  .btncolor {
+  background: #637439;
+  color: #fff;
+  }
+  
+  .img-card {
+  width: 300; 
+  height: 200px; 
+  object-fit: cover;
+  }

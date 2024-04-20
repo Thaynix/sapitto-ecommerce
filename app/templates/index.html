@@ -1,1 +1,57 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    <title>Sapitto | Arte entre a linha e a agulha</title>
+{% endblock%}
+
+{% block content %}
+<!--CARROSEL-->
+<section id="carrosel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">          
+        
+            <div class="carousel-item active custom-slide">
+                <img src="{% static 'img/1.png'%}" class="d-block w-100 slideimg" alt="Slide 1">
+            </div>
+            <div class="carousel-item custom-slide">
+                <img src="{% static 'img/2.png'%}" class="d-block w-100 slideimg" alt="Slide 2">
+            </div>
+            <div class="carousel-item custom-slide">
+                <img src="{% static 'img/3.png'%}" class="d-block w-100 slideimg" alt="Slide 3">
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+<!--PRODUTOS-->
+<section id="produtos">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 my-5 mb-5">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/3f/8a/4a/3f8a4a149ff324aea5a386936d6d0316.jpg" class="card-img-top img-card" alt="Produto 2">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Chapéu Gatinho</h5>
+                        <p class="card-text">R$70.00</p>
+                        <div class="col-sm-12 d-flex justify-content-center">
+                        <a href="#" class="btn btncolor hoveropac me-2"><img src="{% static 'img/carrinho.png'%}" style="width: 20px; height: 20px;" alt=""></a>
+                        <a href="produto.html" class="btn btncolor hoveropac">Ver produto</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
